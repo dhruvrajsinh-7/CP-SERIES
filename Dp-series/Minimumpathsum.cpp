@@ -22,3 +22,9 @@ int minPathSum(vector<vector<int> > &matrix){
     return helper(n-1,m-1,matrix,dp);
     
 }    
+int main(int argc,char **argv)
+{
+  vector<vector<int>> matrix={{1,3,1},{1,5,1},{4,2,1}};
+  minPathSum(matrix);
+    return 0;
+}
