@@ -1,5 +1,7 @@
 # CP-SERIES
 TOPICS WILL BE <br>
+-Arrays <br>
+-Hashmap <br>
 -STACK <br>
 -QUEUE <br>
 -LINKEDLIST <br>
