@@ -13,7 +13,7 @@ string orderlyQueue(string s, int k) {
         sort(s.begin(),s.end());
         return s;
     }
-    int main(){
+int main(){
     string s;
     cin>>s;
     int k;
@@ -22,3 +22,5 @@ string orderlyQueue(string s, int k) {
     ans=orderlyQueue(s,k);
     std::cout << ans << std::endl;
 }
+
+
