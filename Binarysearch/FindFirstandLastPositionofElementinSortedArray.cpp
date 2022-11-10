@@ -3,7 +3,8 @@ using namespace std;
 int main(){
     vector<int>v = {5,7,7,8,8,10};
     int target = 8;
-    searchRange(v,target);
+    cout<<searchRange(v,target)<<endl;
+    return 0;
 }
 vector<int> searchRange(vector<int>& v, int key) {
         vector<int>res;
