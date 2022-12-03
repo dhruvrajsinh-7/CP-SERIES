@@ -6,7 +6,6 @@ bool closeStrings(string word1, string word2)
 
     set<char> s1, s2;
     vector<int> f1(26, 0), f2(26, 0);
-
     for (int i = 0; i < n; i++)
     {
         s1.insert(word1[i]);
