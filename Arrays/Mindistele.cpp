@@ -20,8 +20,6 @@ int minDist(int arr[], int n, int x, int y) {
 int main()
 {
     int t;
-
-    
     cin>>t;
     while (t--)
     {
