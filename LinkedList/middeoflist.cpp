@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+using namespace std;
 struct ListNode
 {
     int val;
@@ -16,4 +18,15 @@ ListNode *middleNode(ListNode *head)
         fast = fast->next->next;
     }
     return slow;
+}
+int main()
+{
+    ListNode *head = new ListNode(1);
+    head->next = new ListNode(2);
+    head->next->next = new ListNode(3);
+    head->next->next->next = new ListNode(4);
+    head->next->next->next->next = new ListNode(5);
+    ListNode *mid = middleNode(head);
+    cout << mid->val << endl;
+    return 0;
 }
