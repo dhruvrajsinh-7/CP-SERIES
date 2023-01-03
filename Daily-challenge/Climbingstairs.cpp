@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 int climbStairs(int n)
 {
@@ -15,9 +15,10 @@ int climbStairs(int n)
     }
     return dp[n];
 }
-int main(){
+int main()
+{
     int n;
-    cin>>n;
-    cout<<"ans is:"<<climbStairs(n);
+    cin >> n;
+    cout << "ans is:" << climbStairs(n);
     return 0;
 }

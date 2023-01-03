@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-int guess(int num); 
-//IT IS AN API IN LEETCODE WHICH RETURNS 1 IF THE NUMBER IS CORRECT, -1 IF THE NUMBER IS SMALLER THAN THE GUESS AND 1 IF THE NUMBER IS GREATER THAN THE GUESS
+int guess(int num);
 int binarysearch(int n, int s, int e)
 {
     int mid;

@@ -4,8 +4,8 @@ using namespace std;
 int main()
 {
     ListNode *head;
-    head->val=1;
-    int head[5]={4,5,1,9};
+    head->val = 1;
+    int head[5] = {4, 5, 1, 9};
     deleteMiddle(head);
 }
 struct ListNode

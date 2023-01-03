@@ -34,7 +34,7 @@ bool exist(vector<vector<char>> &board, string word)
     return false;
 }
 int main()
-{   
+{
     vector<vector<char>> board;
     int m, n;
     cin >> m >> n;
@@ -49,14 +49,16 @@ int main()
         }
         board.push_back(row);
     }
-    cout<<"enter the word to be searched:";
+    cout << "enter the word to be searched:";
     string word;
     cin >> word;
-    if(exist(board,word)){
-        cout<<"true";
+    if (exist(board, word))
+    {
+        cout << "true";
     }
-    else{
-        cout<<"false";
+    else
+    {
+        cout << "false";
     }
     return 0;
 }

@@ -12,5 +12,11 @@
 *.wpd
 *.wps
 *.exe
+capitalcheck.exe
+DeleteNode.exe
+Wordsearch.exe 
+middleoflist.exe
+
+
 
 # End of https://www.toptal.com/developers/gitignore/api/text
