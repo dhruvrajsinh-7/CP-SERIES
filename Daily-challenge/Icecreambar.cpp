@@ -27,3 +27,5 @@ int main()
     cout << maxIceCream(costs, coins);
     return 0;
 }
+
+
