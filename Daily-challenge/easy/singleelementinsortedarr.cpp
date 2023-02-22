@@ -21,14 +21,13 @@ int main()
 {
     int n;
     cin >> n;
-    int x;
     vector<int> nums;
     for (int i = 0; i < n; i++)
     {
+        int x;
         cin >> x;
         nums.push_back(x);
     }
-
     cout << singleNonDuplicate(nums);
     return 0;
 }
