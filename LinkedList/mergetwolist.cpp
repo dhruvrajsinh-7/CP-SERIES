@@ -26,24 +26,27 @@ int main()
     }
     return 0;
 }
-ListNode *mergeTwoLists(ListNode *List1, ListNode *List2)
+ListNode *mergeTwoLists(ListNode *list1, ListNode *list2)
 {
-    if (List1 == NULL)
+    if (list1 == 0)
+        return list2;
+    if (list2 == 0)
+        return list1;
+    if (list1->val > list2->val)
+        swap(list1, list2);
+    ListNode *res = list1;
+
+    while (list1 != NULL && list2 != NULL)
     {
-        return List2;
+        ListNode *temp = NULL;
+
+        while (list1 != NULL && list1->val <= list2->val)
+        {
+            temp = list1;
+            list1 = list1->next;
+        }
+        temp->next = list2;
+        swap(list1, list2);
     }
-    if (List2 == NULL)
-    {
-        return List1;
-    }
-    if (List1->val < List2->val)
-    {
-        List1->next = mergeTwoLists(List1->next, List2);
-        return List1;
-    }
-    else
-    {
-        List2->next = mergeTwoLists(List1, List2->next);
-        return List2;
-    }
+    return res;
 }

@@ -7,7 +7,6 @@ struct TreeNode
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
-
 bool helper(TreeNode *left, TreeNode *right)
 {
     if (left == nullptr || right == nullptr)
