@@ -61,7 +61,7 @@ Should have proper knowledge of constrains used in particular questions
 ## 🚀 Learning tuts <a name = "learning"></a>
 ->You can start by learning fundamentals of language with ==> codewithharry,jenny's lecture on youtube (recommended) <br>
 ->After that you can learn how the standard algorithm works ==> abdul bari , aditya verma on youtube (recommended)<br>
-->If you want to start with problem solving and you have enough knowledge of whatever language you have choosen them ==> striver,nick white , aditya verma , peepcoding on youtube (most recommended) <br>
+->If you want to start with problem solving and you have enough knowledge of whatever language you have choosen then ==> striver,nick white , aditya verma , peepcoding on youtube (most recommended) <br>
 ->you can also refer articals ,website based on dsa just like gfg <br>
 
 ## ✍️ Authors <a name = "authors"></a>
