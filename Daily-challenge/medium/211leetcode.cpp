@@ -35,6 +35,7 @@ bool search(string word)
 }
 int main()
 {
+
     addWord("bad");
     addWord("dad");
     addWord("mad");
