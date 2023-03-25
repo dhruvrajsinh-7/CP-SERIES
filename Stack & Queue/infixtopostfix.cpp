@@ -27,7 +27,6 @@ string infixToPostfix(string s)
     {
         if (s[i] == '(')
         {
-
             st.push(s[i]);
         }
         else if (s[i] >= 'A' && s[i] <= 'Z' || s[i] >= 'a' && s[i] <= 'z')
