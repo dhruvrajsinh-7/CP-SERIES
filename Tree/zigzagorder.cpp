@@ -10,27 +10,39 @@ struct TreeNode
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-void helper(TreeNode *root, vector<vector<int>> &res, int level)
-{
-    if (!root)
-        return;
-    if (level >= res.size())
-        res.push_back({});
-    res[level].push_back(root->val);
-    helper(root->left, res, level + 1);
-    helper(root->right, res, level + 1);
-}
 vector<vector<int>> zigzagLevelOrder(TreeNode *root)
 {
-    vector<vector<int>> res;
-    if (!root)
-        return res;
-    helper(root, res, 0);
-    for (int i = 1; i < res.size(); i = i + 2)
+    vector<vector<int>> result;
+    if (root == NULL)
     {
-        reverse(res[i].begin(), res[i].end());
+        return result;
     }
-    return res;
+    bool flag = true;
+    queue<TreeNode *> qt;
+    qt.push(root);
+    while (!qt.empty())
+    {
+        int size = qt.size();
+        vector<int> row(size);
+        for (int i = 0; i < size; i++)
+        {
+            TreeNode *node = qt.front();
+            qt.pop();
+            int idx = (flag) ? i : size - 1 - i;
+            row[idx] = node->val;
+            if (node->left)
+            {
+                qt.push(node->left);
+            }
+            if (node->right)
+            {
+                qt.push(node->right);
+            }
+        }
+        result.push_back(row);
+        flag = !flag;
+    }
+    return result;
 }
 int main()
 {
