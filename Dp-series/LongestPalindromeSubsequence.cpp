@@ -1,3 +1,5 @@
+#include <bits/stdc++.h>
+using namespace std;
 string reverse(string s1)
 {
     string str = "";
@@ -30,4 +32,10 @@ int longestPalindromeSubseq(string a)
 {
     int n1 = a.length(), n2 = a.length();
     return helper(n1, n2, a, reverse(a));
+}
+int main()
+{
+    string s = "agbcba";
+    cout << longestPalindromeSubseq(s);
+    return 0;
 }
