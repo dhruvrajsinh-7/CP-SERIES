@@ -7,7 +7,6 @@ int numDecodings(string s)
     int ans = helper(s, 0, n, dp);
     return ans;
 }
-
 int helper(string s, int i, int n, vector<int> &dp)
 {
     if (s[i] == '0')
