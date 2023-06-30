@@ -1,3 +1,4 @@
+#inc c
 int removals(vector<int> &arr, int k)
 {
     // Code here
