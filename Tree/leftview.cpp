@@ -1,5 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
+struct Node
+{
+    int data;
+    Node *left;
+    Node *right;
+    Node(int x)
+    {
+        data = x;
+        left = NULL;
+        right = NULL;
+    }
+};
 struct root
 {
     int data;
@@ -46,22 +58,4 @@ vector<int> leftView(Node *root)
         }
     }
     return ans;
-}
-int main()
-{
-    int n;
-    cin >> n;
-    root *root = new root(n);
-    root->left = new root(2);
-    root->right = new root(3);
-    root->left->left = new root(4);
-    root->left->right = new root(5);
-    root->right->left = new root(6);
-    root->right->right = new root(7);
-    vector<int> ans = leftView(root);
-    for (int i = 0; i < ans.size(); i++)
-    {
-        cout << ans[i] << " ";
-    }
-    return 0;
 }
