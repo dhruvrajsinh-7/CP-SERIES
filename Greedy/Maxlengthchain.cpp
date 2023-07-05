@@ -1,5 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
+struct val
+{
+    int first;
+    int second;
+};
 static bool cmp(struct val a, struct val b)
 {
     return a.second < b.second;
