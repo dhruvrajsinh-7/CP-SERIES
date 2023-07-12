@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 vector<int> parents;
+void unionize(int a, int b);
+int find(int node);
 long long countPairs(int n, vector<vector<int>> &edges)
 {
     parents.resize(n);
@@ -45,4 +47,18 @@ int find(int node)
     if (parents[node] == node)
         return node;
     return parents[node] = find(parents[node]);
+}
+int main()
+{
+    int n;
+    cin >> n;
+    vector<vector<int>> edges;
+    for (int i = 0; i < n - 1; i++)
+    {
+        int a, b;
+        cin >> a >> b;
+        edges.push_back({a, b});
+    }
+    cout << countPairs(n, edges);
+    return 0;
 }
